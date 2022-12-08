@@ -1,0 +1,22 @@
+{
+  "name": "mf-monorepo-fullstack",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "description": "Full Stack Monorepo with microfrontends",
+  "scripts": {
+    "start": "pnpm  --parallel --filter \"./**\" start",
+    "build": "pnpm  --parallel --filter \"./**\" build",
+    "stop": "kill-port --port 3000, 4200",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["monorepo", "microfrontends", "fullstack", "angular", "react", "loopback 4"],
+  "author": "jalvarezy <jalvarez.y@soy.sena.edu.co>",
+  "license": "MIT",
+  "devDependencies": {
+    "kill-port": "^2.0.1",
+    "pnpm": "^7.18.1"
+  }
+}

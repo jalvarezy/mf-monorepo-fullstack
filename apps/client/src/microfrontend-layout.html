@@ -1,0 +1,27 @@
+<<single-spa-router mode="hash">
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+  <nav>
+    <application name="@jaltic/navbar"></application>
+  </nav>
+  <main>
+    <router>
+      <application name="@jaltic/body"></application>
+    </router>
+  </main>
+</single-spa-router>
